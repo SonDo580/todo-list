@@ -1,8 +1,4 @@
-const projects = [
-    'Invade Mars',
-    'Shark Taming',
-    'Mega Mind',
-]
+import { getProjects, addProject } from './projectLogic'
 
 const projectsUl = document.querySelector('#projects ul');
 
@@ -12,7 +8,7 @@ allProjectsLi.textContent = "All";
 
 projectsUl.appendChild(allProjectsLi);
 
-projects.forEach(project => {
+getProjects().forEach(project => {
     const projectLi = document.createElement('li');
     projectLi.textContent = project;
     projectsUl.appendChild(projectLi);
