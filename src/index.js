@@ -1,2 +1,4 @@
 import './style.css';
-import './projectDisplay';
+import {renderProjects} from './projectDisplay';
+
+renderProjects();
