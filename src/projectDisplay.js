@@ -20,7 +20,7 @@ const _renderProject = (project) => {
     projectsUl.appendChild(projectLi);
 }
 
-const _activate = (event) => {
+function _activate(event) {
     const currentProjectLi = event.target;
 
     const projectLiList = document.querySelectorAll('#projects ul li');
@@ -36,6 +36,13 @@ const _activate = (event) => {
     }
 
     currentProjectLi.classList.add('active');
+}
+
+const showProjectFormButton = document.querySelector('button[data-function="showProjectForm"]');
+showProjectFormButton.addEventListener('click', showProjectForm);
+
+function showProjectForm() {
+   console.log('work');
 }
 
 export { renderProjects }
