@@ -143,4 +143,46 @@ main #projectName {
     right: 0;
 
     background-color: rgba(0, 0, 0, 0.8);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+}
+
+form h2 {
+    color: blue;
+    margin-top: 0;
+    border-bottom: 1px solid blue;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 10px;
+}
+
+form label {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+form input {
+    border: 1px solid blue;
+    height: 20px;
+    padding: 0 5px;
+    border-radius: 5px;
+}
+
+form .buttons {
+    text-align: right;
+    margin-top: 20px;
 }
