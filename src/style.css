@@ -109,6 +109,10 @@ main h2 {
     border-bottom: 1px solid brown;
 }
 
+main #projectName {
+    color: blue;
+}
+
 #todo-list {
     border-bottom: 1px solid gray;
     padding: 0 20px;
