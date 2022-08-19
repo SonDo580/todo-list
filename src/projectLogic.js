@@ -4,3 +4,6 @@ const projects = [
     'Mega Mind',
 ];
 
+const addProject = (project) => {
+    projects.push(project);
+}
