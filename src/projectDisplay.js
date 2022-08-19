@@ -16,4 +16,4 @@ const _renderProject = (project) => {
     projectsUl.appendChild(projectLi);
 }
 
-export default projectsUl;
+export { renderProjects }
