@@ -2,12 +2,12 @@ import { getProjects } from './projectLogic'
 
 const projectsUl = document.querySelector('#projects ul');
 
-const renderProjects = () => {
+function renderProjects() {
     _renderProject('All');
     getProjects().forEach(project => _renderProject(project));
 }
 
-const _renderProject = (project) => {
+function _renderProject(project) {
     const projectLi = document.createElement('li');
     projectLi.textContent = project;
 
