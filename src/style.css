@@ -19,6 +19,22 @@ button.primary:hover {
     background-color: blueviolet;
 }
 
+button.secondary {
+    background-color: darkgray;
+}
+
+button.secondary:hover {
+    background-color: gray;
+}
+
+button.danger {
+    background-color: red;
+}
+
+button.danger:hover {
+    background-color: darkred;
+}
+
 .wrapper {
     width: min(80vw, 800px);
     height: 80vh;
@@ -34,7 +50,7 @@ button.primary:hover {
     grid-column: 1 / -1;
 
     text-align: center;
-    background-color: cadetblue;
+    background-color: lightblue;
     color: yellow;
     margin: 0;
     padding: 20px 0;
@@ -101,6 +117,10 @@ main h2 {
 
 .todo {
     border-bottom: 1px dotted brown;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .todo .title {
