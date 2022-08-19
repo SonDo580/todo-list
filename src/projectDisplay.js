@@ -4,7 +4,7 @@ const projectsUl = document.querySelector('#projects ul');
 
 const renderProjects = () => {
     _renderProject('All');
-    getProjects().forEach(_renderProject(project));
+    getProjects().forEach(project => _renderProject(project));
 }
 
 const _renderProject = (project) => {
