@@ -1,4 +1,4 @@
-import { getProjects, addProject } from './projectLogic'
+import { getProjects } from './projectLogic'
 
 const projectsUl = document.querySelector('#projects ul');
 
