@@ -38,11 +38,4 @@ function _activate(event) {
     currentProjectLi.classList.add('active');
 }
 
-const showProjectFormButton = document.querySelector('button[data-function="showProjectForm"]');
-showProjectFormButton.addEventListener('click', showProjectForm);
-
-function showProjectForm() {
-   console.log('work');
-}
-
 export { renderProjects }
