@@ -18,7 +18,7 @@ function renderAllTasks() {
     }
 }
 
-function renderTask(task) {
+function renderTask(task, taskIndex) {
     return `
 <div class="task">
     <div class="text">
@@ -27,7 +27,7 @@ function renderTask(task) {
     </div>
     <div class="buttons">
         <button class="secondary">Edit</button>
-        <button class="danger" data-function="deleteTask">Delete</button>
+        <button class="danger" data-function="deleteTask" data-index=${taskIndex}>Delete</button>
     </div>
 </div>
 `
