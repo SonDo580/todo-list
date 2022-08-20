@@ -6,6 +6,9 @@ const tasks = getAllTasks();
 
 
 function renderAllTasks() {
+    unCompletedTasks.innerHTML = `<h3>Doing</h3>`;
+    completedTasks.innerHTML = `<h3>Completed</h3>`;
+
     for (let i = 0; i < tasks.length; i++) {
         if (tasks[i].done === false) {
             unCompletedTasks.appendChild(renderTask(tasks[i], i));
