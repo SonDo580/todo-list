@@ -4,7 +4,7 @@ const unCompletedTasks = document.querySelector('.taskList[data-status="doing"]'
 const completedTasks = document.querySelector('.taskList[data-status="completed"]');
 const tasks = getAllTasks();
 
-function renderTasks() {
+function renderAllTasks() {
     tasks.forEach(task => {
         if (task.done === false) {
             unCompletedTasks.appendChild(renderTask(task));
@@ -29,4 +29,4 @@ function renderTask(task) {
 `
 }
 
-export { renderTasks }
+export { renderAllTasks }
