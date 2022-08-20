@@ -32,3 +32,6 @@ const addTask = (task) => {
     taskList.push(task);
 }
 
+const getAllTasks = () => {
+    return taskList;
+}
