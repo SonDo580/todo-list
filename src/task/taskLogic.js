@@ -36,4 +36,8 @@ const getAllTasks = () => {
     return taskList;
 }
 
-export { addTask, getAllTasks }
+const deleteTask = (id) => {
+    taskList.splice(id, 1);
+}
+
+export { addTask, getAllTasks, deleteTask }
