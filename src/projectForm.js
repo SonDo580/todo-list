@@ -1,4 +1,5 @@
 import { addProject } from './projectLogic'
+import { renderProject } from './projectDisplay';
 
 const showProjectFormButton = document.querySelector('button[data-function="showProjectForm"]');
 showProjectFormButton.addEventListener('click', _showProjectForm);
@@ -14,6 +15,7 @@ function _showProjectForm() {
 function _addProject() {
     const projectName = document.querySelector('input#projectName').value;
     addProject(projectName);
+
 }
 
 export { showProjectFormButton, addProjectButton }
