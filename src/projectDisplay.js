@@ -3,11 +3,11 @@ import { getProjects } from './projectLogic'
 const projectsUl = document.querySelector('#projects ul');
 
 function renderProjects() {
-    _renderProject('All');
-    getProjects().forEach(project => _renderProject(project));
+    renderProject('All');
+    getProjects().forEach(project => renderProject(project));
 }
 
-function _renderProject(project) {
+function renderProject(project) {
     const projectLi = document.createElement('li');
     projectLi.textContent = project;
 
@@ -38,4 +38,4 @@ function _activate(event) {
     currentProjectLi.classList.add('active');
 }
 
-export { renderProjects }
+export { renderProjects, renderProject }
