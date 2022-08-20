@@ -114,12 +114,11 @@ main .projectName {
     color: blue;
 }
 
-#todo-list {
-    border-bottom: 1px solid gray;
+#taskList {
     padding: 0 20px;
 }
 
-.todo {
+.task {
     border-bottom: 1px dotted brown;
 
     display: flex;
@@ -127,11 +126,11 @@ main .projectName {
     align-items: center;
 }
 
-.todo .title {
+.task .title {
     font-weight: bold;
 }
 
-.todo .duedate {
+.task .duedate {
     color: green;
 }
 
