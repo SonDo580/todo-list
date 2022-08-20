@@ -19,18 +19,32 @@ function renderAllTasks() {
 }
 
 function renderTask(task, taskIndex) {
-    return `
-<div class="task">
-    <div class="text">
-        <p class="title">${task.title}</p>
-        <p>Due Date: <span class="duedate">${task.dueDate}</span></p>
-    </div>
-    <div class="buttons">
-        <button class="secondary">Edit</button>
-        <button class="danger" data-function="deleteTask" data-index=${taskIndex}>Delete</button>
-    </div>
+    const taskDiv = document.createElement('div');
+    taskDiv.classList.add('task');
+    taskDiv.innerHTML = `
+<div class="text">
+    <p class="title">${task.title}</p>
+    <p>Due Date: <span class="duedate">${task.dueDate}</span></p>
 </div>
 `
+    const taskButtons = document.createElement('div');
+    taskButtons.classList.add('buttons');
+
+    const editTaskButton = document.createElement('button');
+    editTaskButton.textContent = 'Edit';
+    editTaskButton.classList.add('secondary');
+    
+    const deleteTaskButton = document.createElement('button');
+    deleteTaskButton.textContent = 'Delete';
+    deleteTaskButton.classList.add('danger');
+    deleteTaskButton.setAttribute('data-function', 'deleteTask');
+    deleteTaskButton.setAttribute('data-index', taskIndex);
+
+    taskButtons.appendChild(editTaskButton);
+    taskButtons.appendChild(deleteTaskButton);
+    taskDiv.appendChild(taskButtons);
+
+    return taskDiv;
 }
 
 function _removeTask() {
