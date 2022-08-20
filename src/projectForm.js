@@ -7,8 +7,8 @@ showProjectFormButton.addEventListener('click', _showProjectForm);
 const addProjectButton = document.querySelector('button[data-function="addProject"]');
 addProjectButton.addEventListener('click', _addProject);
 
-// const cancelProjectFormButton = document.querySelector('button[data-function="cancelProjectForm"]');
-// cancelProjectFormButton.addEventListener('click', _hideProjectForm);
+const cancelProjectFormButton = document.querySelector('button[data-function="cancelProjectForm"]');
+cancelProjectFormButton.addEventListener('click', _hideProjectForm);
 
 
 const projectForm = document.querySelector('#projectForm');
@@ -32,4 +32,4 @@ function _addProject() {
     _hideProjectForm();
 }
 
-export { showProjectFormButton, addProjectButton }
+export { showProjectFormButton, addProjectButton, cancelProjectFormButton }
