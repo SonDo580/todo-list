@@ -46,6 +46,8 @@ function renderTask(task, taskIndex) {
 
 function _removeTask(event) {
     const indexDelete = event.target.getAttribute('data-index');
+    deleteTask(indexDelete);
+    renderAllTasks();
 }
 
 export { renderAllTasks }
