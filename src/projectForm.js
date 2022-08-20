@@ -8,4 +8,12 @@ function _showProjectForm() {
     projectForm.parentNode.style.display = 'flex';
 }
 
-export {showProjectFormButton}
+const addProjectButton = document.querySelector('button[data-function="addProject"]');
+addProjectButton.addEventListener('click', _addProject);
+
+function _addProject() {
+    const projectName = document.querySelector('#projectName').value;
+    console.log('projectName');
+}
+
+export { showProjectFormButton, addProjectButton }
