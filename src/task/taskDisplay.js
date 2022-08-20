@@ -8,9 +8,9 @@ const tasks = getAllTasks();
 function renderAllTasks() {
     for (let i = 0; i < tasks.length; i++) {
         if (tasks[i].done === false) {
-            unCompletedTasks.innerHTML += renderTask(tasks[i], i);
+            unCompletedTasks.appendChild(renderTask(tasks[i], i));
         } else if (tasks[i].done === true) {
-            completedTasks.innerHTML += renderTask(tasks[i], i);
+            completedTasks.appendChild(renderTask(tasks[i], i));
         }
     }
 }
