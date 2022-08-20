@@ -21,6 +21,7 @@ function _addProject() {
     const projectName = document.querySelector('input#projectName').value;
     addProject(projectName);
     renderProject(projectName);
+    _hideProjectForm();
 }
 
 export { showProjectFormButton, addProjectButton }
