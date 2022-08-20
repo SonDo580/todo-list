@@ -29,3 +29,4 @@ function renderTask(task) {
 `
 }
 
+export { renderTasks }
