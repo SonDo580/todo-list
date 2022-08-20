@@ -49,4 +49,4 @@ function _removeTask() {
     alert('remove');
 }
 
-export { renderAllTasks, deleteTaskButtons }
+export { renderAllTasks }
