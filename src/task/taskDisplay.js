@@ -5,13 +5,13 @@ const completedTasks = document.querySelector('.taskList[data-status="completed"
 const tasks = getAllTasks();
 
 function renderAllTasks() {
-    tasks.forEach(task => {
-        if (task.done === false) {
-            unCompletedTasks.innerHTML += renderTask(task);
-        } else if (task.done === true) {
-            completedTasks.innerHTML += renderTask(task);
+    for (let i = 0; i < tasks.length; i++) {
+        if (tasks[i].done === false) {
+            unCompletedTasks.innerHTML += renderTask(tasks[i], i);
+        } else if (tasks[i].done === true) {
+            completedTasks.innerHTML += renderTask(tasks[i], i);
         }
-    })
+    }
 }
 
 function renderTask(task) {
