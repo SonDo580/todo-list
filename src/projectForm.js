@@ -15,7 +15,7 @@ function _showProjectForm() {
 function _addProject() {
     const projectName = document.querySelector('input#projectName').value;
     addProject(projectName);
-
+    renderProject(projectName);
 }
 
 export { showProjectFormButton, addProjectButton }
