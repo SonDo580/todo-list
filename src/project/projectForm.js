@@ -10,7 +10,6 @@ addProjectButton.addEventListener('click', _addProject);
 const cancelProjectFormButton = document.querySelector('button[data-function="cancelProjectForm"]');
 cancelProjectFormButton.addEventListener('click', _hideProjectForm);
 
-
 const projectForm = document.querySelector('#projectForm');
 const projectInput = document.querySelector('input#projectName');
 
