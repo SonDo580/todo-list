@@ -1,4 +1,4 @@
-import { getAllTasks } from "./taskLogic";
+import { getAllTasks, deleteTask } from "./taskLogic";
 
 const unCompletedTasks = document.querySelector('.taskList[data-status="doing"]');
 const completedTasks = document.querySelector('.taskList[data-status="completed"]');
@@ -45,8 +45,8 @@ function renderTask(task, taskIndex) {
     return taskDiv;
 }
 
-function _removeTask() {
-    alert('remove');
+function _removeTask(event) {
+    const indexDelete = event.target.getAttribute('data-index');
 }
 
 export { renderAllTasks }
