@@ -115,7 +115,7 @@ main .projectName {
     color: blue;
 }
 
-#taskList {
+.taskList {
     padding: 0 20px;
 }
 
