@@ -1,5 +1,5 @@
 import './style.css';
 import { renderProjects } from './projectDisplay';
-import { showProjectFormButton } from './projectForm'
+import { showProjectFormButton, addProjectButton } from './projectForm'
 
 renderProjects();
