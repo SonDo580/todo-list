@@ -5,7 +5,7 @@ const completedTasks = document.querySelector('.taskList[data-status="completed"
 const tasks = getAllTasks();
 
 const deleteTaskButtons = document.querySelectorAll('button[data-function="deleteTask"]');
-deleteTaskButtons.forEach(button => button.addEventListener('click', removeTask));
+deleteTaskButtons.forEach(button => button.addEventListener('click', _removeTask));
 
 
 function renderAllTasks() {
@@ -33,8 +33,8 @@ function renderTask(task) {
 `
 }
 
-function removeTask() {
+function _removeTask() {
     alert('remove');
 }
 
-export { renderAllTasks }
+export { renderAllTasks, deleteTaskButtons }
