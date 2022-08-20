@@ -7,9 +7,14 @@ showProjectFormButton.addEventListener('click', _showProjectForm);
 const addProjectButton = document.querySelector('button[data-function="addProject"]');
 addProjectButton.addEventListener('click', _addProject);
 
+
+const projectForm = document.querySelector('#projectForm');
 function _showProjectForm() {
-    const projectForm = document.querySelector('#projectForm');
     projectForm.parentNode.style.display = 'flex';
+}
+
+function _hideProjectForm() {
+    projectForm.parentNode.style.display = 'none';
 }
 
 function _addProject() {
