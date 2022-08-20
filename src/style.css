@@ -68,6 +68,8 @@ button.danger:hover {
 #projects {
     overflow: auto;
     padding-left: 10px;
+    background-color: aqua;
+    border: 1px solid brown;
 }
 
 #projects h2 {
@@ -130,6 +132,11 @@ main .projectName {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 10px;
+}
+
+.task .text p {
+    margin: 0;
 }
 
 .task .title {
