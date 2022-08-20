@@ -4,9 +4,6 @@ const unCompletedTasks = document.querySelector('.taskList[data-status="doing"]'
 const completedTasks = document.querySelector('.taskList[data-status="completed"]');
 const tasks = getAllTasks();
 
-const deleteTaskButtons = document.querySelectorAll('button[data-function="deleteTask"]');
-deleteTaskButtons.forEach(button => button.addEventListener('click', _removeTask));
-
 
 function renderAllTasks() {
     for (let i = 0; i < tasks.length; i++) {
@@ -39,6 +36,7 @@ function renderTask(task, taskIndex) {
     deleteTaskButton.classList.add('danger');
     deleteTaskButton.setAttribute('data-function', 'deleteTask');
     deleteTaskButton.setAttribute('data-index', taskIndex);
+    deleteTaskButton.addEventListener('click', _removeTask);
 
     taskButtons.appendChild(editTaskButton);
     taskButtons.appendChild(deleteTaskButton);
