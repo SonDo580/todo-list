@@ -19,6 +19,7 @@ function _showProjectForm() {
 }
 
 function _hideProjectForm() {
+    projectInput.value = '';
     projectForm.parentNode.style.display = 'none';
 }
 
