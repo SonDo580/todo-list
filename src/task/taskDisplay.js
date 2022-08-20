@@ -34,7 +34,6 @@ function renderTask(task, taskIndex) {
     const deleteTaskButton = document.createElement('button');
     deleteTaskButton.textContent = 'Delete';
     deleteTaskButton.classList.add('danger');
-    deleteTaskButton.setAttribute('data-function', 'deleteTask');
     deleteTaskButton.setAttribute('data-index', taskIndex);
     deleteTaskButton.addEventListener('click', _removeTask);
 
