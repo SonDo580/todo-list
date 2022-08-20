@@ -23,7 +23,7 @@ function renderTask(task) {
     </div>
     <div class="buttons">
         <button class="secondary">Edit</button>
-        <button class="danger">Delete</button>
+        <button class="danger" data-function="deleteTask">Delete</button>
     </div>
 </div>
 `
