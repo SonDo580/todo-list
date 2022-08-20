@@ -4,6 +4,10 @@ const unCompletedTasks = document.querySelector('.taskList[data-status="doing"]'
 const completedTasks = document.querySelector('.taskList[data-status="completed"]');
 const tasks = getAllTasks();
 
+const deleteTaskButtons = document.querySelectorAll('button[data-function="deleteTask"]');
+deleteTaskButtons.forEach(button => button.addEventListener('click', removeTask));
+
+
 function renderAllTasks() {
     for (let i = 0; i < tasks.length; i++) {
         if (tasks[i].done === false) {
@@ -27,6 +31,10 @@ function renderTask(task) {
     </div>
 </div>
 `
+}
+
+function removeTask() {
+    alert('remove');
 }
 
 export { renderAllTasks }
