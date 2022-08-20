@@ -35,3 +35,5 @@ const addTask = (task) => {
 const getAllTasks = () => {
     return taskList;
 }
+
+export { addTask, getAllTasks }
