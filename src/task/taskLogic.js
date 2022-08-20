@@ -21,9 +21,14 @@ const taskList = [
         title: 'Invent laser canon model A',
         project: 'Invade Mars',
         description: 'Random description',
-        dueDate: '14-10-2025',
+        dueDate: '14-10-2022',
         note: '',
         priority: 3,
         done: true,
     }
 ];
+
+const addTask = (task) => {
+    taskList.push(task);
+}
+
