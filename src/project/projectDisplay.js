@@ -1,6 +1,7 @@
 import { getProjects } from './projectLogic'
 
 const projectsUl = document.querySelector('#projects ul');
+const currentProjectSpan = document.querySelector('main span.projectName');
 
 function renderProjects() {
     renderProject('All');
@@ -36,6 +37,7 @@ function _activate(event) {
     }
 
     currentProjectLi.classList.add('active');
+    currentProjectSpan.textContent = currentProjectLi.textContent;
 }
 
 export { renderProjects, renderProject }
