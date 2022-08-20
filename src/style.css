@@ -110,7 +110,7 @@ main h2 {
     border-bottom: 1px solid brown;
 }
 
-main #projectName {
+main .projectName {
     color: blue;
 }
 
