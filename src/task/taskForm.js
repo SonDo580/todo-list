@@ -17,7 +17,7 @@ const doingRadio = document.querySelector('#doing');
 const completedRadio = document.querySelector('#completed');
 
 function _showTaskForm() {
-    _showProjects()
+    _showProjects();
     taskForm.parentNode.style.display = 'flex';
 }
 
