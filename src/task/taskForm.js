@@ -68,12 +68,16 @@ function _resetInput() {
 }
 
 function showEditTaskForm(task, index) {
-    title.value = 
-    // projectSelect.value, 
-    dueDateValue, 
-    description.value, 
-    note.value, 
-    // done
+    _showProjects();
+
+    title.value = task.title;
+    projectSelect.value = task.project;
+    dueDate.value = task.dueDate.split('-').reverse().join('-');
+    description.value = task.description; 
+    note.value = task.note;
+    task.done ? completedRadio.checked = true : doingRadio.checked = true;
+    
+    taskForm.parentNode.style.display = 'flex';
 }
 
 export { showTaskFormButton, cancelTaskFormButton, addTaskButton, showEditTaskForm }
