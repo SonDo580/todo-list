@@ -6,6 +6,9 @@ showTaskFormButton.addEventListener('click', _showTaskForm);
 const cancelTaskFormButton = document.querySelector('button[data-function="cancelTaskForm"]');
 cancelTaskFormButton.addEventListener('click', _hideTaskForm);
 
+const addTaskButton = document.querySelector('button[data-function="addTask"]');
+addTaskButton.addEventListener('click', _createTask);
+
 const taskForm = document.querySelector('#taskForm');
 
 const title = document.querySelector('#title');
