@@ -25,7 +25,25 @@ const taskList = [
         note: '',
         priority: 3,
         done: true,
-    }
+    },
+    {
+        title: 'Play football with baby white shark',
+        project: 'Shark Taming',
+        description: 'Random description',
+        dueDate: '24-12-2022',
+        note: '',
+        priority: 1,
+        done: false,
+    },
+    {
+        title: 'Invent fighting robot model Z',
+        project: 'Invade Mars',
+        description: 'Random description',
+        dueDate: '14-10-2025',
+        note: '',
+        priority: 2,
+        done: true,
+    },
 ];
 
 const addTask = (task) => {
