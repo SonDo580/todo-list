@@ -12,6 +12,7 @@ const addTaskButton = document.querySelector('button[data-function="addTask"]');
 addTaskButton.addEventListener('click', _addNewTask);
 
 const taskForm = document.querySelector('#taskForm');
+const taskFormHeading = taskForm.querySelector('h2');
 
 const title = document.querySelector('#title');
 const projectSelect = document.querySelector('#project');
