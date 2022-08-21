@@ -23,6 +23,7 @@ const doingRadio = document.querySelector('#doing');
 const completedRadio = document.querySelector('#completed');
 
 function _showTaskForm() {
+    taskFormHeading.textContent = 'Add New Task';
     _showProjects();
     taskForm.parentNode.style.display = 'flex';
 }
@@ -69,6 +70,7 @@ function _resetInput() {
 }
 
 function showEditTaskForm(task) {
+    taskFormHeading.textContent = 'Edit Task';
     _showProjects();
 
     title.value = task.title;
