@@ -39,7 +39,7 @@ const taskList = [
         title: 'Invent fighting robot model Z',
         project: 'Invade Mars',
         description: 'Random description',
-        dueDate: '14-10-2025',
+        dueDate: '14-10-2022',
         note: '',
         priority: 2,
         done: true,
