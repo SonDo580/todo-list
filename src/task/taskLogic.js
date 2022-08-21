@@ -53,8 +53,8 @@ const deleteTask = (index) => {
     taskList.splice(index, 1);
 }
 
-const createTask = (title, project, description, dueDate, note, done) => {
-    return { title, project, description, dueDate, note, done };
+const createTask = (title, project, dueDate, description, note, done) => {
+    return { title, project, dueDate, description, note, done };
 }
 
 export { addTask, getAllTasks, deleteTask, createTask }
