@@ -56,4 +56,4 @@ function _resetInput() {
     completedRadio.checked = false;
 }
 
-export { showTaskFormButton, cancelTaskFormButton }
+export { showTaskFormButton, cancelTaskFormButton, addTaskButton }
