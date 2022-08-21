@@ -36,6 +36,7 @@ function _createTask() {
     }
 
     let dueDateValue = dueDate.value.split('-').reverse().join('-');
+    let done = !doingRadio.checked;
 }
 
 function _showProjects() {
