@@ -11,14 +11,29 @@ function renderAllTasks() {
 
     for (let i = 0; i < tasks.length; i++) {
         if (tasks[i].done === false) {
-            unCompletedTasks.appendChild(renderTask(tasks[i], i));
+            unCompletedTasks.appendChild(_renderTask(tasks[i], i));
         } else if (tasks[i].done === true) {
-            completedTasks.appendChild(renderTask(tasks[i], i));
+            completedTasks.appendChild(_renderTask(tasks[i], i));
         }
     }
 }
 
-function renderTask(task, taskIndex) {
+function renderProjectTasks(projectName) {
+    unCompletedTasks.innerHTML = `<h3>Doing</h3>`;
+    completedTasks.innerHTML = `<h3>Completed</h3>`;
+
+    for (let i = 0; i < tasks.length; i++) {
+        if (tasks[i].project === projectName) {
+            if (tasks[i].done === false) {
+                unCompletedTasks.appendChild(_renderTask(tasks[i], i));
+            } else if (tasks[i].done === true) {
+                completedTasks.appendChild(_renderTask(tasks[i], i));
+            }
+        }
+    }
+}
+
+function _renderTask(task, taskIndex) {
     const taskDiv = document.createElement('div');
     taskDiv.classList.add('task');
     taskDiv.innerHTML = `
@@ -53,4 +68,4 @@ function _removeTask(event) {
     renderAllTasks();
 }
 
-export { renderAllTasks }
+export { renderAllTasks, renderProjectTasks }
