@@ -188,13 +188,17 @@ form h2 {
     margin-bottom: 20px;
 }
 
-form label {
+.form-group > label {
     width: 150px;
     text-align: right;
 
     font-weight: bold;
     font-size: 1.1rem;
-    margin-bottom: 5px;
+}
+
+.form-group .radio-group {
+    display: flex;
+    align-items: center;
 }
 
 form input {
