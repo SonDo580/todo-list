@@ -9,7 +9,6 @@ const title = document.querySelector('#title');
 const project = document.querySelector('#project');
 const description = document.querySelector('#description');
 const note = document.querySelector('#note');
-const priority = document.querySelector('#priority');
 const doingRadio = document.querySelector('#doing');
 const completedRadio = document.querySelector('#completed');
 

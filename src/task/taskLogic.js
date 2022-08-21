@@ -5,7 +5,6 @@ const taskList = [
         description: 'Random description',
         dueDate: '12-03-2023',
         note: '',
-        priority: 1,
         done: false,
     },
     {
@@ -14,7 +13,6 @@ const taskList = [
         description: 'Random description',
         dueDate: '24-12-2024',
         note: '',
-        priority: 2,
         done: false,
     },
     {
@@ -23,7 +21,6 @@ const taskList = [
         description: 'Random description',
         dueDate: '14-10-2022',
         note: '',
-        priority: 3,
         done: true,
     },
     {
@@ -32,7 +29,6 @@ const taskList = [
         description: 'Random description',
         dueDate: '24-12-2022',
         note: '',
-        priority: 1,
         done: false,
     },
     {
@@ -41,7 +37,6 @@ const taskList = [
         description: 'Random description',
         dueDate: '14-10-2022',
         note: '',
-        priority: 2,
         done: true,
     },
 ];
