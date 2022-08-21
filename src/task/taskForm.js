@@ -10,6 +10,7 @@ const taskForm = document.querySelector('#taskForm');
 
 const title = document.querySelector('#title');
 const projectSelect = document.querySelector('#project');
+const dueDate = document.querySelector('#dueDate');
 const description = document.querySelector('#description');
 const note = document.querySelector('#note');
 const doingRadio = document.querySelector('#doing');
