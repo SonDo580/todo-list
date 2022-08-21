@@ -6,3 +6,5 @@ const taskForm = document.querySelector('#taskForm');
 function _showTaskForm() {
     taskForm.parentNode.style.display = 'flex';
 }
+
+export { showTaskFormButton }
