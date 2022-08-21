@@ -12,7 +12,7 @@ const addTaskButton = document.querySelector('button[data-function="addTask"]');
 addTaskButton.addEventListener('click', _addNewTask);
 
 const updateTaskButton = document.querySelector('button[data-function="updateTask"]');
-updateTaskButton.addEventListener('click', _updateTask);
+// updateTaskButton.addEventListener('click', _updateTask);
 
 const taskForm = document.querySelector('#taskForm');
 const taskFormHeading = taskForm.querySelector('h2');
@@ -75,6 +75,7 @@ function _resetInput() {
 
 function showEditTaskForm(task) {
     taskFormHeading.textContent = 'Edit Task';
+    updateTaskButton.style.display = 'inline-block';
     _showProjects();
 
     title.value = task.title;
