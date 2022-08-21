@@ -35,6 +35,8 @@ function _showTaskForm() {
 function _hideTaskForm() {
     taskForm.parentNode.style.display = 'none';
     _resetInput();
+    addTaskButton.style.display = 'none';
+    updateTaskButton.style.display = 'none';
 }
 
 function _addNewTask() {
