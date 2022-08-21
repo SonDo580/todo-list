@@ -22,6 +22,7 @@ function _showTaskForm() {
 
 function _hideTaskForm() {
     taskForm.parentNode.style.display = 'none';
+    _resetInput();
 }
 
 function _showProjects() {
@@ -34,6 +35,14 @@ function _showProject(project) {
     option.value = project;
     option.textContent = project;
     projectSelect.appendChild(option);
+}
+
+function _resetInput() {
+    title.value = '';
+    description.value = '';
+    note.value = '';
+    doingRadio.checked = true;
+    completedRadio.checked = false;
 }
 
 export { showTaskFormButton, cancelTaskFormButton }
