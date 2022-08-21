@@ -40,6 +40,7 @@ function _showProject(project) {
 
 function _resetInput() {
     title.value = '';
+    dueDate.value = '';
     description.value = '';
     note.value = '';
     doingRadio.checked = true;
