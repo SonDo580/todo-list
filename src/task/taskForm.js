@@ -90,8 +90,8 @@ function showEditTaskForm(task) {
     taskForm.parentNode.style.display = 'flex';
 }
 
-function updateTask(index) {
-    
+function updateTask() {
+
 }
 
 export { showTaskFormButton, cancelTaskFormButton, addTaskButton, showEditTaskForm, updateTask }

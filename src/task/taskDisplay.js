@@ -1,4 +1,4 @@
-import { showEditTaskForm } from "./taskForm";
+import { showEditTaskForm, updateTask } from "./taskForm";
 import { getAllTasks, deleteTask } from "./taskLogic";
 
 const unCompletedTasks = document.querySelector('.taskList[data-status="doing"]');
