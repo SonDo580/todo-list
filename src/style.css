@@ -181,15 +181,16 @@ form h2 {
 }
 
 .form-group {
-    display: grid;
-    grid-template-columns: 1fr 4fr;
+    display: flex;
+    align-items: flex-start;
     gap: 10px;
 
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 form label {
-    justify-self: end;
+    width: 150px;
+    text-align: right;
 
     font-weight: bold;
     font-size: 1.1rem;
@@ -198,9 +199,30 @@ form label {
 
 form input {
     border: 1px solid blue;
+    height: 25px;
+    padding: 0 5px;
+    border-radius: 5px;
+
+    flex-grow: 1;
+}
+
+form select {
+    border: 1px solid blue;
+    background-color: white;
     height: 20px;
     padding: 0 5px;
     border-radius: 5px;
+
+    flex-grow: 1;
+}
+
+form textarea {
+    border: 1px solid blue;
+    padding: 5px;
+    border-radius: 5px;
+    resize: none;
+
+    flex-grow: 1;
 }
 
 form .buttons {
