@@ -57,4 +57,8 @@ const createTask = (title, project, dueDate, description, note, done) => {
     return { title, project, dueDate, description, note, done };
 }
 
-export { addTask, getAllTasks, deleteTask, createTask }
+const changeTask = (task, index) => {
+    taskList[index] = task;
+}
+
+export { addTask, getAllTasks, deleteTask, createTask, changeTask }
