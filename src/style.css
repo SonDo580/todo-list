@@ -233,3 +233,7 @@ form .buttons {
     text-align: right;
     margin-top: 20px;
 }
+
+button[data-function="updateTask"] {
+    display: none;
+}
