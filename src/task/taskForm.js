@@ -11,7 +11,7 @@ function _showTaskForm() {
 }
 
 function _hideTaskForm() {
-    projectForm.parentNode.style.display = 'none';
+    taskForm.parentNode.style.display = 'none';
 }
 
 export { showTaskFormButton, cancelTaskFormButton }
