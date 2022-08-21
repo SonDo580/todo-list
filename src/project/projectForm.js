@@ -24,6 +24,10 @@ function _hideProjectForm() {
 
 function _addProject() {
     const projectName = projectInput.value;
+    if (projectName.trim() === '') {
+        alert('Please provide the project!');
+        return;
+    }
     if (projectName.toLowerCase() === 'all') {
         alert('You must not use "All" for project name!');
         return;
