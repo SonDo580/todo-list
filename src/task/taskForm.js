@@ -41,6 +41,7 @@ function _addNewTask() {
 
     const newTask = createTask(title.value, projectSelect.value, dueDateValue, description.value, note.value, done);
     addTask(newTask);
+    _hideTaskForm();
     renderAllTasks();
 }
 
