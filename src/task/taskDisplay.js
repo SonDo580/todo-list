@@ -1,3 +1,4 @@
+import { showEditTaskForm } from "./taskForm";
 import { getAllTasks, deleteTask } from "./taskLogic";
 
 const unCompletedTasks = document.querySelector('.taskList[data-status="doing"]');
@@ -76,6 +77,7 @@ function _removeTask(event) {
 
 function _editTask(event) {
     const indexEdit = event.target.getAttribute('data-index');
+    showEditTaskForm(indexEdit);
 }
 
 export { renderAllTasks, renderProjectTasks }
