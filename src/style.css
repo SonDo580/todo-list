@@ -235,6 +235,10 @@ form .buttons {
     margin-top: 20px;
 }
 
+button[data-function="addTask"] {
+    display: none;
+}
+
 button[data-function="updateTask"] {
     display: none;
 }
