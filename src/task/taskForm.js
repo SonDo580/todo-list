@@ -1,4 +1,5 @@
 import { getProjects } from "../project/projectLogic";
+import { renderAllTasks } from "./taskDisplay";
 import { createTask, addTask } from "./taskLogic";
 
 const showTaskFormButton = document.querySelector('button[data-function="showTaskForm"]');
@@ -40,6 +41,7 @@ function _addNewTask() {
 
     const newTask = createTask(title.value, projectSelect.value, dueDateValue, description.value, note.value, done);
     addTask(newTask);
+    renderAllTasks();
 }
 
 function _showProjects() {
