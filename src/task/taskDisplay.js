@@ -48,6 +48,8 @@ function _renderTask(task, taskIndex) {
     const editTaskButton = document.createElement('button');
     editTaskButton.textContent = 'Edit';
     editTaskButton.classList.add('secondary');
+    editTaskButton.setAttribute('data-index', taskIndex);
+    editTaskButton.addEventListener('click', _editTask);
     
     const deleteTaskButton = document.createElement('button');
     deleteTaskButton.textContent = 'Delete';
