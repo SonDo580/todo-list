@@ -147,6 +147,11 @@ main .projectName {
     color: green;
 }
 
+.task .buttons {
+    display: flex;
+    gap: 5px;
+}
+
 .blur {
     position: absolute;
     top: 0;
@@ -164,23 +169,28 @@ main .projectName {
 form {
     padding: 20px;
     border-radius: 10px;
-    width: 50%;
+    width: 75%;
+    background-color: white;
 }
 
 form h2 {
     color: blue;
+    text-align: center;
     margin-top: 0;
     border-bottom: 1px solid blue;
 }
 
 .form-group {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 10px;
 
     margin-bottom: 10px;
 }
 
 form label {
+    justify-self: end;
+
     font-weight: bold;
     font-size: 1.1rem;
     margin-bottom: 5px;
