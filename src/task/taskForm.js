@@ -34,6 +34,7 @@ function _hideTaskForm() {
 function _addNewTask() {
     if (title.value === '' || dueDate.value === '') {
         alert('Title and Due Date cannot be empty!');
+        return;
     }
 
     let dueDateValue = dueDate.value.split('-').reverse().join('-');
