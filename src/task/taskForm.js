@@ -7,8 +7,9 @@ const cancelTaskFormButton = document.querySelector('button[data-function="cance
 cancelTaskFormButton.addEventListener('click', _hideTaskForm);
 
 const taskForm = document.querySelector('#taskForm');
+
 const title = document.querySelector('#title');
-const project = document.querySelector('#project');
+const projectSelect = document.querySelector('#project');
 const description = document.querySelector('#description');
 const note = document.querySelector('#note');
 const doingRadio = document.querySelector('#doing');
@@ -20,6 +21,16 @@ function _showTaskForm() {
 
 function _hideTaskForm() {
     taskForm.parentNode.style.display = 'none';
+}
+
+function _showProjects() {
+    getProjects().forEach(project => _showProject(project));
+}
+
+function _showProject(project) {
+    const option = document.createElement('option');
+    option.value = project;
+    
 }
 
 export { showTaskFormButton, cancelTaskFormButton }
