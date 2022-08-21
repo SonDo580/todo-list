@@ -29,6 +29,12 @@ function _hideTaskForm() {
     _resetInput();
 }
 
+function _createTask() {
+    if (title.value === '' || dueDate.value === '') {
+        alert('Title and Due Date cannot be empty!');
+    }
+}
+
 function _showProjects() {
     projectSelect.textContent = '';
     getProjects().forEach(project => _showProject(project));
