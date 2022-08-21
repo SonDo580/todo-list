@@ -37,6 +37,9 @@ function _addNewTask() {
 
     let dueDateValue = dueDate.value.split('-').reverse().join('-');
     let done = !doingRadio.checked;
+
+    const newTask = createTask(title.value, projectSelect.value, dueDateValue, description.value, note.value, done);
+    addTask(newTask);
 }
 
 function _showProjects() {
