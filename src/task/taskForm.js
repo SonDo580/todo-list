@@ -67,8 +67,13 @@ function _resetInput() {
     completedRadio.checked = false;
 }
 
-function showEditTaskForm(taskIndex) {
-
+function showEditTaskForm(task, index) {
+    title.value = 
+    // projectSelect.value, 
+    dueDateValue, 
+    description.value, 
+    note.value, 
+    // done
 }
 
 export { showTaskFormButton, cancelTaskFormButton, addTaskButton, showEditTaskForm }

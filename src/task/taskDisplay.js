@@ -77,7 +77,7 @@ function _removeTask(event) {
 
 function _editTask(event) {
     const indexEdit = event.target.getAttribute('data-index');
-    showEditTaskForm(indexEdit);
+    showEditTaskForm(tasks[indexEdit], indexEdit);
 }
 
 export { renderAllTasks, renderProjectTasks }
