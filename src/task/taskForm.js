@@ -8,7 +8,7 @@ const cancelTaskFormButton = document.querySelector('button[data-function="cance
 cancelTaskFormButton.addEventListener('click', _hideTaskForm);
 
 const addTaskButton = document.querySelector('button[data-function="addTask"]');
-addTaskButton.addEventListener('click', _createTask);
+addTaskButton.addEventListener('click', _addNewTask);
 
 const taskForm = document.querySelector('#taskForm');
 
@@ -30,7 +30,7 @@ function _hideTaskForm() {
     _resetInput();
 }
 
-function _createTask() {
+function _addNewTask() {
     if (title.value === '' || dueDate.value === '') {
         alert('Title and Due Date cannot be empty!');
     }
