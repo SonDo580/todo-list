@@ -33,6 +33,8 @@ function _createTask() {
     if (title.value === '' || dueDate.value === '') {
         alert('Title and Due Date cannot be empty!');
     }
+
+    let dueDateValue = dueDate.value.split('-').reverse().join('-');
 }
 
 function _showProjects() {
