@@ -25,6 +25,7 @@ const completedRadio = document.querySelector('#completed');
 function _showTaskForm() {
     taskFormHeading.textContent = 'Add New Task';
     _showProjects();
+    addTaskButton.style.display = 'inline-block';
     taskForm.parentNode.style.display = 'flex';
 }
 
