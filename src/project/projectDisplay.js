@@ -1,3 +1,4 @@
+import { renderProjectTasks } from '../task/taskDisplay';
 import { getProjects } from './projectLogic'
 
 const projectsUl = document.querySelector('#projects ul');
@@ -37,7 +38,10 @@ function _activate(event) {
     }
 
     currentProjectLi.classList.add('active');
-    currentProjectSpan.textContent = currentProjectLi.textContent;
+    
+    let projectName = currentProjectLi.textContent;
+    currentProjectSpan.textContent = projectName;
+    renderProjectTasks(projectName);
 }
 
 export { renderProjects, renderProject }
