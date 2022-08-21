@@ -67,7 +67,7 @@ function _resetInput() {
     completedRadio.checked = false;
 }
 
-function showEditTaskForm(task, index) {
+function showEditTaskForm(task) {
     _showProjects();
 
     title.value = task.title;
