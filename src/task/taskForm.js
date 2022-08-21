@@ -1,4 +1,5 @@
 import { getProjects } from "../project/projectLogic";
+import { createTask, addTask } from "./taskLogic";
 
 const showTaskFormButton = document.querySelector('button[data-function="showTaskForm"]');
 showTaskFormButton.addEventListener('click', _showTaskForm);
