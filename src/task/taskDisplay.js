@@ -64,8 +64,12 @@ function _renderTask(task, taskIndex) {
 
 function _removeTask(event) {
     const indexDelete = event.target.getAttribute('data-index');
-    deleteTask(indexDelete);
-    renderAllTasks();
+    if(confirm('Delete this task?')) {
+        deleteTask(indexDelete);
+        renderAllTasks();
+    } else {
+        return;
+    }
 }
 
 export { renderAllTasks, renderProjectTasks }
