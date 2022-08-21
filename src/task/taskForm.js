@@ -16,6 +16,7 @@ const doingRadio = document.querySelector('#doing');
 const completedRadio = document.querySelector('#completed');
 
 function _showTaskForm() {
+    _showProjects()
     taskForm.parentNode.style.display = 'flex';
 }
 
@@ -24,13 +25,15 @@ function _hideTaskForm() {
 }
 
 function _showProjects() {
+    projectSelect.textContent = '';
     getProjects().forEach(project => _showProject(project));
 }
 
 function _showProject(project) {
     const option = document.createElement('option');
     option.value = project;
-    
+    option.textContent = project;
+    projectSelect.appendChild(option);
 }
 
 export { showTaskFormButton, cancelTaskFormButton }
