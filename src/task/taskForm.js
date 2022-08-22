@@ -93,7 +93,16 @@ function showEditTaskForm(task, index) {
 
 function _updateTask(event) {
     const indexUpdate = event.target.getAttribute('data-index');
-    
+
+    if (title.value === '' || dueDate.value === '') {
+        alert('Title and Due Date cannot be empty!');
+        return;
+    }
+
+    let dueDateValue = dueDate.value.split('-').reverse().join('-');
+    let done = !doingRadio.checked;
+
+    const newTask = createTask(title.value, projectSelect.value, dueDateValue, description.value, note.value, done);
 }
 
 export { showTaskFormButton, cancelTaskFormButton, addTaskButton, showEditTaskForm }
