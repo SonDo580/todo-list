@@ -1,6 +1,6 @@
 import { getProjects } from "../project/projectLogic";
 import { renderAllTasks } from "./taskDisplay";
-import { createTask, addTask } from "./taskLogic";
+import { createTask, addTask, changeTask } from "./taskLogic";
 
 const showTaskFormButton = document.querySelector('button[data-function="showTaskForm"]');
 showTaskFormButton.addEventListener('click', _showTaskForm);
@@ -102,7 +102,9 @@ function _updateTask(event) {
     let dueDateValue = dueDate.value.split('-').reverse().join('-');
     let done = !doingRadio.checked;
 
-    const newTask = createTask(title.value, projectSelect.value, dueDateValue, description.value, note.value, done);
+    const task = createTask(title.value, projectSelect.value, dueDateValue, description.value, note.value, done);
+
+    changeTask(task, indexUpdate);
 }
 
 export { showTaskFormButton, cancelTaskFormButton, addTaskButton, showEditTaskForm }
