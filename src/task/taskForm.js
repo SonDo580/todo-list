@@ -92,9 +92,8 @@ function showEditTaskForm(task, index) {
 }
 
 function _updateTask(event) {
+    const indexUpdate = event.target.getAttribute('data-index');
     
-
-
 }
 
 export { showTaskFormButton, cancelTaskFormButton, addTaskButton, showEditTaskForm }
