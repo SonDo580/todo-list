@@ -12,7 +12,7 @@ const addTaskButton = document.querySelector('button[data-function="addTask"]');
 addTaskButton.addEventListener('click', _addNewTask);
 
 const updateTaskButton = document.querySelector('button[data-function="updateTask"]');
-updateTaskButton.addEventListener('click', updateTask);
+updateTaskButton.addEventListener('click', _updateTask);
 
 const taskForm = document.querySelector('#taskForm');
 const taskFormHeading = taskForm.querySelector('h2');
@@ -90,8 +90,8 @@ function showEditTaskForm(task) {
     taskForm.parentNode.style.display = 'flex';
 }
 
-function updateTask() {
-
+function _updateTask(event) {
+    const indexUpdate = event.target.getAttribute('data-index');
 }
 
-export { showTaskFormButton, cancelTaskFormButton, addTaskButton, showEditTaskForm, updateTask }
+export { showTaskFormButton, cancelTaskFormButton, addTaskButton, showEditTaskForm }
