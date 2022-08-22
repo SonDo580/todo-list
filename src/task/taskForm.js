@@ -75,9 +75,10 @@ function _resetInput() {
     completedRadio.checked = false;
 }
 
-function showEditTaskForm(task) {
+function showEditTaskForm(task, index) {
     taskFormHeading.textContent = 'Edit Task';
     updateTaskButton.style.display = 'inline-block';
+    updateTaskButton.setAttribute('data-index', index);
     _showProjects();
 
     title.value = task.title;
@@ -91,7 +92,9 @@ function showEditTaskForm(task) {
 }
 
 function _updateTask(event) {
-    const indexUpdate = event.target.getAttribute('data-index');
+    
+
+
 }
 
 export { showTaskFormButton, cancelTaskFormButton, addTaskButton, showEditTaskForm }
