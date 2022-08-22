@@ -20,6 +20,11 @@ function renderAllTasks() {
 }
 
 function renderProjectTasks(projectName) {
+    if (projectName === 'All') {
+        renderAllTasks();
+        return;
+    }
+
     unCompletedTasks.innerHTML = `<h3>Doing</h3>`;
     completedTasks.innerHTML = `<h3>Completed</h3>`;
 
