@@ -105,6 +105,8 @@ function _updateTask(event) {
     const task = createTask(title.value, projectSelect.value, dueDateValue, description.value, note.value, done);
 
     changeTask(task, indexUpdate);
+    _hideTaskForm();
+    renderAllTasks();
 }
 
 export { showTaskFormButton, cancelTaskFormButton, addTaskButton, showEditTaskForm }
